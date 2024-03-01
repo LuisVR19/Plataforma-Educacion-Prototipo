@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/material.css">
+
+</head>
+<body>
+    <main>
+        <div>
+            <header>
+                <a class="logo" href="./home.html">MaestroDigital</a>
+                <ul>
+                    <li><a href="./notas.html">Notas</a></li>
+                    <li><a href="./foro.html">Foros</a></li>
+                    <li><a href="./index.html"><img src="assets/exit.svg" width="25" height="18" alt="exclamation" id="img"></a></li>
+                </ul>
+            </header>
+
+        </div>
+        <div class="container-container">
+            <div class="title-container">
+                <h2>Entrega de trabajos</h2>
+            </div>
+            <hr>
+
+            <div class="container">
+                <div class="content-container">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <label for="titulo">Título del Trabajo:</label>
+                        <input class="input" type="text" id="titulo" name="titulo" placeholder="Ingrese el título del trabajo" required>
+                        <label for="descripcion">Descripción:</label>
+                        <textarea class="input" id="descripcion" name="descripcion" placeholder="Ingrese una descripción del trabajo" rows="5" required></textarea>
+                        <label for="archivo">Subir Archivo Multimedia:</label>
+                        <input class="button" type="file" id="archivo" name="archivo" accept="image/*, video/*, audio/*" required>
+                        <button class="button" type="submit">Enviar Trabajo</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

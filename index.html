@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main class="main-login">
+        <img src="./assets/logo.png" class="login-image-logo"/>
+        <form id="login-form" class="form login-form" >
+            <div class="input-box">
+                <input name="email" type="text" class="input" placeholder="Nombre de usuario"/>
+                <span class="span-for-input-error"></span>
+            </div>
+            <div class="input-box">
+                <input name="password" type="password" class="input" placeholder="Contraseña"/>
+                <span class="span-for-input-error"></span>
+            </div>
+            <button id="btn-log-in" type="button" class="button button-primary" onclick="iniciarSesion()">Iniciar sesión</button>
+        </form>
+    </main>
+</body>
+</html>
+
+<script src="./index.js"></script>

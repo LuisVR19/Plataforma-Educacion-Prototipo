@@ -1,0 +1,38 @@
+.container{
+    width: 100%;   
+}
+
+.content-container{
+    margin-top: 0.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-container-material{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0.5%;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+form input[type="file"] {
+    margin-bottom: 10px;
+}

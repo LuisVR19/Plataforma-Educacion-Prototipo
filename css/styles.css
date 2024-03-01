@@ -1,0 +1,141 @@
+:root{
+    --background:#EEEBDD;
+    --background2:#DFD3C3;
+    --button:#810000;
+    --button-hover:#630000;
+    --white-color: white;
+    --black-color: black;
+    --input:#788189;
+    --font: 'Poppins',sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--background);
+    font-family: var(--font);
+    min-width: 100vh;
+}
+
+.button {
+    padding: 0.6rem 1rem;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--button);
+    color: var(--white-color);
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
+    &:hover {
+        transform: scale(1.01);
+        background-color: var(--button-hover);
+    }
+}
+
+.input,
+.textarea {
+    padding: 0.5rem;
+    border: 0.0625rem solid var(--gray-light-color);
+    border-radius: 0.3125rem;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--font);
+    
+}
+
+.quantitative-input {
+    text-align: end;
+}
+
+.textarea {
+    resize: none;
+    height: 7rem;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: var(--green-color);
+    box-shadow: 0 0 0.1875rem 0 var(--green-color);
+}
+
+.span-for-input-error {
+    max-width: 90%;
+    white-space: wrap;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    color: var(--red-color);
+    font-size: 0.7rem;
+}
+
+/* NAV */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background2);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--black-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: var(--button);
+    color: var(--white-color);
+  } */
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    background: var(--background2);
+    z-index: 1;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 200;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--black-color);
+}
